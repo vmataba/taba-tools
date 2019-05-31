@@ -5,6 +5,11 @@
     "require": {
         "twitter/bootstrap": "3.4.1"
     },
+    "autoload": {
+        "autoload": {
+            "files": ["libs/Date.php"]
+        }
+    },
     "authors": [
         {
             "name": "Victor Mataba",

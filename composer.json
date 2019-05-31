@@ -1,7 +1,7 @@
 {
     "name": "taba/tools",
     "description": "A package for some php functions that has functions to perform common tasks ...",
-    "type": "composer-plugin",
+    "type": "library",
     "require": {
         "twitter/bootstrap": "3.4.1"
     },

@@ -1,0 +1,15 @@
+{
+    "name": "taba/tools",
+    "description": "A package for some php functions that has functions to perform common tasks ...",
+    "type": "composer-plugin",
+    "require": {
+        "twitter/bootstrap": "3.4.1"
+    },
+    "authors": [
+        {
+            "name": "Victor Mataba",
+            "email": "vmataba0@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha"
+}

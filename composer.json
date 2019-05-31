@@ -2,12 +2,10 @@
     "name": "taba/tools",
     "description": "A package for some php functions that has functions to perform common tasks ...",
     "type": "library",
-    "require": {
-        "twitter/bootstrap": "3.4.1"
-    },
+    "license": "MIT",
     "autoload": {
-        "autoload": {
-            "files": ["libs/Date.php"]
+        "psr-4": {
+            "libs\\":"libs"
         }
     },
     "authors": [

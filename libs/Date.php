@@ -12,7 +12,7 @@
  * @author Victor Mataba <vmataba0@gmail.com>
  */
 
-namespace taba\tools\libs;
+namespace libs;
 
 class Date {
 

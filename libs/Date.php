@@ -16,6 +16,14 @@ namespace libs;
 
 class Date {
 
+    /** 
+     *@param $date should be in format: yyy-mm-dd h:m:s, example 2019-05-10 21:01:11
+     * 
+     * @param $includeTime is bool, should be true if date only is required example
+     * from the above example the output will be May, 10 2019
+     * 
+     * And if $includeTime is set to false the output will be May, 10, 2019 21:01:11
+    */
     public static function getFormattedDate($date, $includeTime = true) {
 
         $splittedDate = explode(' ', $date);

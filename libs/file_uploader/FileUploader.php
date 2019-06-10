@@ -50,7 +50,7 @@ class FileUploader {
     }
 
     public static function widget() {
-        return \Yii::$app->controller->renderPartial('@app/libs/file_uploader/views/widget');
+        return \Yii::$app->controller->renderPartial('@app/vendor/taba/tools/libs/file_uploader/views/widget');
     }
 
 }

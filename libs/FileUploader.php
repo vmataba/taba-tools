@@ -16,7 +16,13 @@ namespace libs;
 
 class FileUploader {
 
-    public static function uploadFile($inputFileName = 'nativeFileInput', $destinationPath, $includeTimeStamp) {
+    public static function uploadFile($inputFileName, $destinationPath, $includeTimeStamp) {
+       
+        if ($inputFileName === null){
+            $inputFileName = 'nativeFileInput';
+        }
+
+       
         if (isset($_FILES[$inputFileName])) {
             $fileName = $_FILES[$inputFileName]['name'];
 

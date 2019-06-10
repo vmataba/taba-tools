@@ -12,7 +12,7 @@
  * @author Victor Mataba <vmataba0@gmail.com>
  */
 
-namespace libs;
+namespace libs\date;
 
 class Date {
 

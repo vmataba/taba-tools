@@ -12,7 +12,7 @@
  * @author Victor Mataba <vmataba0@gmail.com>
  */
 
-namespace libs\file_uploader;
+namespace libs;
 
 class FileUploader {
 
@@ -50,7 +50,7 @@ class FileUploader {
     }
 
     public static function widget() {
-        return \Yii::$app->controller->renderPartial('@app/vendor/taba/tools/libs/file_uploader/views/widget');
+        return \Yii::$app->controller->renderPartial('@app/vendor/taba/tools/libs/views/widget');
     }
 
 }

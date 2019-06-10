@@ -1,5 +1,4 @@
 <div class="file-uploader-widget">
-    <div class="form-group">
         <div class="chosenFile">
 
             <ul class="list-group">
@@ -9,13 +8,13 @@
             </ul>
 
         </div>
-    </div>
+    
 
     <div class="file-attachment pull-right">
 
         <input type='file' id="nativeFileInput" name="nativeFileInput" style="display: none"/>
 
-        <span style="font-size: 22px">
+        <span>
             <i class="glyphicon glyphicon-paperclip" title="Add a file" style="cursor: pointer"
                id="customFileInput"></i>
         </span>

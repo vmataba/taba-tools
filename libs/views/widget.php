@@ -1,7 +1,7 @@
 <div class="file-uploader-widget">
         <div class="chosenFile">
 
-            <ul class="list-group">
+            <ul class="list-group" id="chosenFileDescriptionContainer">
                 <li class="list-group-item" id="chosenFileDescription" style="display: none">
                     <i class="glyphicon glyphicon-file"></i>
                 </li>
@@ -34,6 +34,7 @@
             const closeButton = `<i class='glyphicon glyphicon-remove pull-right' id='btnRemoveFile' title='Remove this file' onclick='removeFile()'></i>`;
             fileDescription += closeButton;
             $('#chosenFileDescription').html($('#chosenFileDescription').html() + fileDescription);
+            $('#chosenFileDescriptionContainer').css('display','block');
             $('#chosenFileDescription').css('display', 'block');
         });
 

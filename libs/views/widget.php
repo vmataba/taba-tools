@@ -10,6 +10,8 @@
         </div>
     
 
+    <br>
+
     <div class="file-attachment pull-right">
 
         <input type='file' id="nativeFileInput" name="nativeFileInput" style="display: none"/>

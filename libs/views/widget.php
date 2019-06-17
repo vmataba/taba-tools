@@ -1,7 +1,7 @@
 <div class="file-uploader-widget">
         <div class="chosenFile">
 
-            <ul class="list-group" id="chosenFileDescriptionContainer">
+            <ul class="list-group" id="chosenFileDescriptionContainer" style="display: none">
                 <li class="list-group-item" id="chosenFileDescription" style="display: none">
                     <i class="glyphicon glyphicon-file"></i>
                 </li>
@@ -46,7 +46,9 @@
         const removeFile = () => {
             $('#nativeFileInput').val('');
             $('#chosenFileDescription').html('');
+            $('#chosenFileDescriptionContainer').css('display','none');
             $('#chosenFileDescription').css('display', 'none');
+            
         };
     </script>
 </div>

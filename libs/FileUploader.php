@@ -60,7 +60,7 @@ class FileUploader {
 
 
 
-            $files = $_FILES['files'];
+            $files = $_FILES[$inputFileName];
             //Original files' names
             $fileNames = $files['name'];
             //File Types

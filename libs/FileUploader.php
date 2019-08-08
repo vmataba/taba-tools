@@ -16,7 +16,7 @@ namespace libs;
 
 class FileUploader {
 
-    public static function uploadFile($inputFileName, $destinationPath, $includeTimeStamp) {
+    public static function uploadFile($inputFileName, $destinationPath, $includeTimeStamp, $postFix = '') {
 
         if ($inputFileName === null) {
             $inputFileName = 'nativeFileInput';
@@ -30,6 +30,8 @@ class FileUploader {
 
             $finalFileName = $fileName;
 
+            $finalFileName = explode('.', $fileName)[0] . '-' . $postFix . '.' . $fileExtension
+                    
             if ($includeTimeStamp) {
                 $finalFileName = explode('.', $fileName)[0] . '-' . date('y-m-d h:i:s') . '.' . $fileExtension;
             }
@@ -55,7 +57,7 @@ class FileUploader {
         }
     }
 
-     public static function uploadMultipleFiles($inputFileName, $destinationPath, $includeTimeStamp) {
+    public static function uploadMultipleFiles($inputFileName, $destinationPath, $includeTimeStamp) {
         if (isset($_FILES[$inputFileName])) {
 
 

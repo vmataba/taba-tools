@@ -30,7 +30,7 @@ class FileUploader {
 
             $finalFileName = $fileName;
 
-            $finalFileName = explode('.', $fileName)[0] . '-' . $postFix . '.' . $fileExtension
+            $finalFileName = explode('.', $fileName)[0] . '-' . $postFix . '.' . $fileExtension;
                     
             if ($includeTimeStamp) {
                 $finalFileName = explode('.', $fileName)[0] . '-' . date('y-m-d h:i:s') . '.' . $fileExtension;
